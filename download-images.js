@@ -16,7 +16,7 @@ const sharp = require('sharp');
     const characterDiv = characterDivs[i];
     const imageBuffer = await characterDiv.screenshot({ omitBackground: true });
 
-    fs.writeFileSync(`character-${i + 1}.png`, imageBuffer);
+    fs.writeFileSync(`chars/character-${i + 1}.png`, imageBuffer);
   }
 
   await browser.close();
